@@ -9,6 +9,8 @@ A Python application to help track and analyze cholesterol and blood sugar test 
 
 ## Installation
 
+first, create .env file and fill in OPENROUTER_API_KEY
+
 ```bash
 # Install uv (if not already installed)
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -17,14 +19,14 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 git clone <repository-url>
 cd python_interview
 
-# Create a virtual environment and install dependencies
-uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-uv pip install -r requirements.txt
-
 # Or use uv sync if you have a pyproject.toml
 uv sync
+
+#run 
+uv run fastapi dev main.py
 ```
+
+Server will be available at <http://127.0.0.1:8000>
 
 ## Health Reference Ranges
 
