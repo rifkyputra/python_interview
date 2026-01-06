@@ -50,7 +50,7 @@ async def process_query(request: QueryRequest):
         model=request.model,
         api_key=api_key,
         base_url="https://openrouter.ai/api/v1",
-        temperature=0.9,
+        temperature=0.7,
         max_tokens=1080,
     )
 
