@@ -20,7 +20,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Clone the repository
 git clone <repository-url>
-cd python_interview
+cd hospital_management
 
 # Install dependencies
 uv sync
